@@ -2,6 +2,9 @@ package uebung_08_02;
 
 import java.util.Random;
 
+//Hello Git!123
+//pushit
+
 public class PilzFeld {
     final int SPIELFELDGROESSE = 10;
 
