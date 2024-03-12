@@ -7,7 +7,7 @@ public class Program_08_02 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Hello!");
         PilzFeld pf = new PilzFeld();
-        pf.SpielZuruecksetzen();
+        pf.spielZuruecksetzen();
 
 
         schleife:
@@ -21,7 +21,7 @@ public class Program_08_02 {
                                     + "\n Möchtest du noch einmal spielen? Ja/Nein? ");
                 String auswahl = sc.nextLine();
                 if(auswahl.equalsIgnoreCase("ja")){
-                    pf.SpielZuruecksetzen();
+                    pf.spielZuruecksetzen();
                     pf.spielfeldZuruecksetzten();
 
                 }

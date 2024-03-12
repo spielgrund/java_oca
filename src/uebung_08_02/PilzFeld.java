@@ -46,7 +46,7 @@ public class PilzFeld {
 
     }
 
-    public void SpielZuruecksetzen(){//TODO
+    public void spielZuruecksetzen(){
         spielzuege = SPIELZUEGE;
         score = 0;
         spielfeldZuruecksetzten();
