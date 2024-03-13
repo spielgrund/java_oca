@@ -7,10 +7,8 @@ public class Program_09
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-        Liste l = new Liste();
-        VerderblichesProdukt vp = new VerderblichesProdukt("Apfel","Ein Apfel"
-        ,5, 0.99, 30);
-        System.out.println(vp);
+        Lager l = new Lager();
+
 
         schleife:
         while(true)
@@ -21,23 +19,16 @@ public class Program_09
             System.out.println("3. Produkte ausgeben.");
             System.out.println("4. Beenden.");
 
-            int c = 4;
-            try
-            {
-                c = sc.nextInt();
-            }
-            catch (Exception e)
-            {
-                System.out.println("Bitte 1, 2 oder 3 wählen.");
-            }
-            switch (c)
+            int choice = UserInput.getInt("");
+
+            switch (choice)
             {
                 case 1:
-                    l.add(ErstellungProdukt.Erstellung());
+                    l.add(ErstellungProdukt.Erstellung1());
                     break;
 
                 case 2:
-                    l.add(ErstellungVerderblichesProdukt.Erstellung());
+                    l.add(ErstellungProdukt.Erstellung2());
                     break;
 
                 case 3:
@@ -47,6 +38,9 @@ public class Program_09
                 case 4:
                     System.out.println("Auf Wiedersehen!");
                     break schleife;
+
+                default:
+                    System.out.println("Bitte 1-4 wählen.");
 
             }
 
